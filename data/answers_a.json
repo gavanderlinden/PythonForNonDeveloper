@@ -1,0 +1,58 @@
+{
+    "q1": [
+        {
+            "eval": "isinstance(name, str)",
+            "name_error": "you have not assigned the variable 'name'",
+            "message": "variable 'name' is not a string"
+        },
+        {
+            "eval": "0 < age < 100",
+            "message": "variable 'age' should be an integer between 1 and 100"
+        },
+        {
+            "eval": "isinstance(colors, list)",
+            "message": "colors should be a list"
+        },
+        {
+            "eval": "len(colors) >= 3",
+            "message": "you should have at least 3 variables in your list"
+        }
+    ],
+    "q2": [
+        {
+            "eval": "name2 == name.capitalize()",
+            "message": "name2 should be the same as name, but capitalized"
+        },
+        {
+            "eval": "age2 == (age * 2)",
+            "message": "age2"
+        },
+        {
+            "eval": "colors[-1] == 'silver'",
+            "message": "the last value of 'colors' should be 'silver'"
+        }
+    ],
+    "q3": [
+        {
+            "eval": "user_name == (name.upper() + str(age2) + colors[-2])"
+        }
+    ],
+    "q4": [
+        {
+            "eval": "n_und == text.count('und')",
+            "message": "n_und should be a number equal to the amount of times 'und' is used in the text"
+        },
+        {
+            "eval": "sentences == text.split('\\n')",
+            "message": "sentences should be a list of sentences without the line breaks"
+        },
+        {
+            "eval": "n_sentences == len(sentences)",
+            "message": "n_sentences should be an integer equal to the number of sentences in the list sentences"
+        },
+        {
+            "eval": "text_wellness == [s for s in sentences if 'Wellness' in s][0]",
+            "message": "text_wellness should be a string"
+        }
+    ]
+}
