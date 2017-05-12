@@ -1,0 +1,192 @@
+{
+  "declaring variables": [
+    {
+      "question": "declare variable the_oscars with value 2016",
+      "answer": "the_oscars = 2016",
+      "method": "exec"
+    },
+    {
+      "question": "declare variable best_picture with value 'Moonlight'",
+      "answer": "best_picture = 'Moonlight'",
+      "method": "exec"
+    },
+    {
+      "question": "permanently add 1 to the_oscars using the shorthand",
+      "answer": "the_oscars += 1",
+      "method": "exec"
+    },
+    {
+      "question": "declare variable best_picture with value 'Spotlight'",
+      "answer": "best_picture = 'Spotlight'",
+      "method": "exec"
+    },
+    {
+      "question": "permanently change the_oscars to string",
+      "answer": "the_oscars = str(the_oscars)",
+      "method": "exec"
+    },
+    {
+      "question": "permanently add the_oscars to best_picture using the shorthand",
+      "answer": "best_picture += the_oscars",
+      "method": "exec"
+    },
+    {
+      "question": "declare variable best_picture_nominees as a list of 'The Big Short', 'Bridge of Spies', 'Brooklyn'",
+      "answer": "best_picture_nominees = ['The Big Short', 'Bridge of Spies', 'Brooklyn']",
+      "method": "exec"
+    }
+  ],
+  "built-in types": [
+    {
+      "question": "What class are True and False?",
+      "answer": "bool",
+      "method": "text"
+    },
+    {
+      "question": "declare variable casey_affleck as True",
+      "answer": "casey_affleck = True",
+      "method": "exec"
+    },
+    {
+      "question": "declare variable ryan_gosling as False",
+      "answer": "ryan_gosling = False",
+      "method": "exec"
+    },
+    {
+      "question": "declare dictionary won_best_picture and put 'Casey Affleck' and 'Ryan Gosling' in it, values are the same as above",
+      "answer": "won_best_picture = {'Casey Affleck': True, 'Ryan Gosling': False}",
+      "method": "exec"
+    },
+    {
+      "question": "declare variable numbers as a range of 5 numbers",
+      "answer": "numbers = range(5)",
+      "method": "exec"
+    },
+    {
+      "question": "permanently change numbers to list",
+      "answer": "numbers = list(numbers)",
+      "method": "exec"
+    },
+    {
+      "question": "print numbers",
+      "answer": "print(numbers)",
+      "method": "exec"
+    }
+  ],
+  "comparison": [
+    {
+      "question": "1 > 0 (Answer with True or False)",
+      "answer": "True",
+      "method": "text"
+    },
+    {
+      "question": "2 <= 3",
+      "answer": "True",
+      "method": "text"
+    },
+    {
+      "question": "6 <= 5",
+      "answer": "False",
+      "method": "text"
+    },
+    {
+      "question": "3 != 0",
+      "answer": "True",
+      "method": "text"
+    },
+    {
+      "question": "5 == 4",
+      "answer": "False",
+      "method": "text"
+    },
+    {
+      "question": "'true' == 'True'",
+      "answer": "False",
+      "method": "text"
+    },
+    {
+      "question": "'1' == 1",
+      "answer": "False",
+      "method": "text"
+    },
+    {
+      "question": "False == 0",
+      "answer": "True",
+      "method": "text"
+    },
+    {
+      "question": "[1, 2, 3] != (1, 2, 3)",
+      "answer": "True",
+      "method": "text"
+    }
+  ],
+  "numeric operations": [
+    {
+      "question": "declare variable a as 5",
+      "answer": "a = 5",
+      "method": "exec"
+    },
+    {
+      "question": "declare variable b as 10",
+      "answer": "b = 10",
+      "method": "exec"
+    },
+    {
+      "question": "declare variable c as a + b",
+      "answer": "c = a + b",
+      "method": "exec"
+    },
+    {
+      "question": "declare variable d as the division of c by b",
+      "answer": "d = c / b",
+      "method": "exec"
+    },
+    {
+      "question": "declare variable e as the remainder of a by d",
+      "answer": "e = a % d",
+      "method": "exec"
+    },
+    {
+      "question": "permanently multiply e by the power of b (do not use shorthand)",
+      "answer": "e = e ** b",
+      "method": "exec"
+    },
+    {
+      "question": "print e",
+      "answer": "print(e)",
+      "method": "exec"
+    },
+    {
+      "question": "declare variable f as -7",
+      "answer": "f = -7",
+      "method": "exec"
+    },
+    {
+      "question": "permanently change f by adding the absolute value to a",
+      "answer": "f = abs(f) + a",
+      "method": "exec"
+    },
+    {
+      "question": "print f",
+      "answer": "print(f)",
+      "method": "exec"
+    }
+  ],
+  "string operations": [
+    {
+      "question": "I've declared the variable 'text' for you",
+      "answer": "text = '''The Zen of Python. Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated. Flat is better than nested. Sparse is better than dense. Readability counts. Special cases aren't special enough to break the rules. Although practicality beats purity. Errors should never pass silently. Unless explicitly silenced. In the face of ambiguity, refuse the temptation to guess. There should be one-- and preferably only one --obvious way to do it. Although that way may not be obvious at first unless you're Dutch. Now is better than never. Although never is often better than *right* now. If the implementation is hard to explain, it's a bad idea. If the implementation is easy to explain, it may be a good idea. Namespaces are one honking great idea -- let's do more of those!'''",
+      "method": "declare"
+    },
+    {
+      "question": "declare variable sentences as the text split on points",
+      "answer": "sentences = text.split('.')",
+      "method": "exec"
+    },
+    {
+      "question": "print the first value of sentences",
+      "answer": "print(sentences[0])",
+      "method": "exec"
+    }
+  ]
+}
