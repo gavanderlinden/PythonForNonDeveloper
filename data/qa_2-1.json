@@ -31,6 +31,11 @@
       "method": "exec"
     },
     {
+      "question": "print best_picture",
+      "answer": "print(best_picture)",
+      "method": "exec"
+    },
+    {
       "question": "declare variable best_picture_nominees as a list of 'The Big Short', 'Bridge of Spies', 'Brooklyn'",
       "answer": "best_picture_nominees = ['The Big Short', 'Bridge of Spies', 'Brooklyn']",
       "method": "exec"
@@ -68,6 +73,11 @@
       "method": "exec"
     },
     {
+      "question": "print the type of numbers",
+      "answer": "print(type(numbers))",
+      "method": "exec"
+    },
+    {
       "question": "print numbers",
       "answer": "print(numbers)",
       "method": "exec"
@@ -100,6 +110,16 @@
       "method": "text"
     },
     {
+      "question": "5 == 4",
+      "answer": "False",
+      "method": "text"
+    },
+    {
+      "question": "1 == 1.0",
+      "answer": "True",
+      "method": "text"
+    },
+    {
       "question": "'true' == 'True'",
       "answer": "False",
       "method": "text"
@@ -112,6 +132,11 @@
     {
       "question": "False == 0",
       "answer": "True",
+      "method": "text"
+    },
+    {
+      "question": "True != 1.0",
+      "answer": "False",
       "method": "text"
     },
     {
@@ -132,7 +157,7 @@
       "method": "exec"
     },
     {
-      "question": "declare variable c as a + b",
+      "question": "declare variable c as the addition of a and b",
       "answer": "c = a + b",
       "method": "exec"
     },
@@ -142,8 +167,18 @@
       "method": "exec"
     },
     {
+      "question": "print d",
+      "answer": "print(d)",
+      "method": "exec"
+    },
+    {
       "question": "declare variable e as the remainder of a by d",
       "answer": "e = a % d",
+      "method": "exec"
+    },
+    {
+      "question": "print e",
+      "answer": "print(e)",
       "method": "exec"
     },
     {
@@ -162,8 +197,8 @@
       "method": "exec"
     },
     {
-      "question": "permanently change f by adding the absolute value to a",
-      "answer": "f = abs(f) + a",
+      "question": "permanently add 14 to f (using the shorthand)",
+      "answer": "f += 14",
       "method": "exec"
     },
     {
@@ -172,20 +207,368 @@
       "method": "exec"
     }
   ],
+  "slicing": [
+    {
+      "question": "I'VE DECLARED THE VARIABLE 'alphabet' (str) FOR YOU",
+      "answer": "alphabet = 'abcdefghijklmnopqrstuvwxyz'",
+      "method": "declare"
+    },
+    {
+      "question": "print alphabet",
+      "answer": "print(alphabet)",
+      "method": "exec"
+    },
+    {
+      "question": "print the first item of alphabet",
+      "answer": "print(alphabet[0])",
+      "method": "exec"
+    },
+    {
+      "question": "print the last item of alphabet",
+      "answer": "print(alphabet[-1])",
+      "method": "exec"
+    },
+    {
+      "question": "print the first three items of alphabet",
+      "answer": "print(alphabet[:3])",
+      "method": "exec"
+    },
+    {
+      "question": "print the last three items of alphabet",
+      "answer": "print(alphabet[-3:])",
+      "method": "exec"
+    },
+    {
+      "question": "print the 10th item of alphabet",
+      "answer": "print(alphabet[9])",
+      "method": "exec"
+    },
+    {
+      "question": "REMEMBER WE START COUNTING FROM 0",
+      "answer": "",
+      "method": "declare"
+    },
+    {
+      "question": "print the 11th until the 13th item of alphabet",
+      "answer": "print(alphabet[10:13])",
+      "method": "exec"
+    },
+    {
+      "question": "I'VE DECLARED THE VARIABLE 'numbers' (list) FOR YOU, WHICH IS 1 to 100",
+      "answer": "numbers = list(range(1, 101))",
+      "method": "declare"
+    },
+    {
+      "question": "print the first number",
+      "answer": "print(numbers[0])",
+      "method": "exec"
+    },
+    {
+      "question": "print the last 10 numbers",
+      "answer": "print(numbers[-10:])",
+      "method": "exec"
+    },
+    {
+      "question": "print only the odd numbers",
+      "answer": "print(numbers[::2])",
+      "method": "exec"
+    },
+    {
+      "question": "print only the even numbers",
+      "answer": "print(numbers[1::2])",
+      "method": "exec"
+    }
+  ],
   "string operations": [
     {
-      "question": "I've declared the variable 'text' for you",
+      "question": "I'VE DECLARED THE VARIABLE 'text' FOR YOU",
       "answer": "text = '''The Zen of Python. Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated. Flat is better than nested. Sparse is better than dense. Readability counts. Special cases aren't special enough to break the rules. Although practicality beats purity. Errors should never pass silently. Unless explicitly silenced. In the face of ambiguity, refuse the temptation to guess. There should be one-- and preferably only one --obvious way to do it. Although that way may not be obvious at first unless you're Dutch. Now is better than never. Although never is often better than *right* now. If the implementation is hard to explain, it's a bad idea. If the implementation is easy to explain, it may be a good idea. Namespaces are one honking great idea -- let's do more of those!'''",
       "method": "declare"
     },
     {
-      "question": "declare variable sentences as the text split on points",
+      "question": "count how often 'is' occurs in 'text' and print",
+      "answer": "print(text.count('is'))",
+      "method": "exec"
+    },
+    {
+      "question": "declare variable 'sentences' as the variable 'text' split on points",
       "answer": "sentences = text.split('.')",
       "method": "exec"
     },
     {
-      "question": "print the first value of sentences",
+      "question": "print the first value of 'sentences'",
       "answer": "print(sentences[0])",
+      "method": "exec"
+    },
+    {
+      "question": "print the second value of 'sentences'",
+      "answer": "print(sentences[1])",
+      "method": "exec"
+    },
+    {
+      "question": "store the last value of sentences in 'last_sentence'",
+      "answer": "last_sentence = sentences[-1]",
+      "method": "exec"
+    },
+    {
+      "question": "permanently strip 'last_sentence' of spaces and exclamation marks",
+      "answer": "last_sentence = last_sentence.strip(' !')",
+      "method": "exec"
+    },
+    {
+      "question": "print 'last_sentence'",
+      "answer": "print(last_sentence)",
+      "method": "exec"
+    },
+    {
+      "question": "replace 'one honking' with 'a' and print",
+      "answer": "print(last_sentence.replace('one honking', 'a'))",
+      "method": "exec"
+    },
+    {
+      "question": "split 'last_sentence' on '-' and store the last part as 'last_words'",
+      "answer": "last_words = last_sentence.split('-')[-1]",
+      "method": "exec"
+    },
+    {
+      "question": "strip spaces, split on spaces and print the first word",
+      "answer": "print(last_words.strip(' ').split(' ')[0])",
+      "method": "exec"
+    },
+    {
+      "question": "I'VE DECLARED THE VARIABLE 'months' (list) FOR YOU",
+      "answer": "months = [str(x) for x in range(1,13)]",
+      "method": "declare"
+    },
+    {
+      "question": "print the 6th value of months with two characters using zfill",
+      "answer": "print(months[5].zfill(2))",
+      "method": "exec"
+    },
+    {
+      "question": "join 'months' with '->' and print",
+      "answer": "print('->'.join(months))",
+      "method": "exec"
+    },
+    {
+      "question": "find the index of 'Special' in 'text' and set as 'index'",
+      "answer": "index = text.find('Special')",
+      "method": "exec"
+    },
+    {
+      "question": "find '.' in 'text' and use 'index' as the second argument then print",
+      "answer": "print(text.find('.', index))",
+      "method": "exec"
+    },
+    {
+      "question": "YOU HAVE NOW FOUND THE FIRST POINT AFTER 'Special'",
+      "answer": "",
+      "method": "declare"
+    },
+    {
+      "question": "do it again but store to 'index2'",
+      "answer": "index2 = text.find('.', index)",
+      "method": "exec"
+    },
+    {
+      "question": "slice 'text' using both indices and print",
+      "answer": "print(text[index:index2])",
+      "method": "exec"
+    }
+  ],
+  "list methods": [
+    {
+      "question": "I'VE DECLARED THE VARIABLE 'superheroes' (list) FOR YOU",
+      "answer": "superheroes = ['spiderman', 'batman', 'hulk', 'catwoman', 'iron man', 'daredevil', 'captain america']",
+      "method": "declare"
+    },
+    {
+      "question": "print the first item of superheroes",
+      "answer": "print(superheroes[0])",
+      "method": "exec"
+    },
+    {
+      "question": "print the last item of superheroes",
+      "answer": "print(superheroes[-1])",
+      "method": "exec"
+    },
+    {
+      "question": "append 'deadpool' to superheroes",
+      "answer": "superheroes.append('deadpool')",
+      "method": "exec"
+    },
+    {
+      "question": "extend superheroes with a list of ['samantha jones', 'ant man']",
+      "answer": "superheroes.extend(['samantha jones', 'ant man'])",
+      "method": "exec"
+    },
+    {
+      "question": "sort superheroes",
+      "answer": "superheroes.sort()",
+      "method": "exec"
+    },
+    {
+      "question": "reverse superheroes",
+      "answer": "superheroes.reverse()",
+      "method": "exec"
+    },
+    {
+      "question": "print superheroes",
+      "answer": "print(superheroes)",
+      "method": "exec"
+    },
+    {
+      "question": "pop the last value from superheroes and print",
+      "answer": "print(superheroes.pop())",
+      "method": "exec"
+    },
+    {
+      "question": "do that again",
+      "answer": "print(superheroes.pop())",
+      "method": "exec"
+    },
+    {
+      "question": "SEE HOW YOU NOW GET A DIFFERENT VALUE",
+      "answer": "",
+      "method": "declare"
+    },
+    {
+      "question": "store every second hero in variable a_team",
+      "answer": "a_team = superheroes[::2]",
+      "method": "exec"
+    },
+    {
+      "question": "store the others in variable b_team",
+      "answer": "b_team = superheroes[1::2]",
+      "method": "exec"
+    },
+    {
+      "question": "",
+      "answer": "a_team_backup = a_team; a_team = ['Hannibal', 'Murdock', 'B. A. Baracus', 'Face']",
+      "method": "declare"
+    },
+    {
+      "question": "print the a_team",
+      "answer": "print(a_team)",
+      "method": "exec"
+    },
+    {
+      "question": "WAIT? WHAT! OK YEAH THAT IS THE A-TEAM BUT...",
+      "answer": "a_team = a_team_backup",
+      "method": "declare"
+    },
+    {
+      "question": "try it again",
+      "answer": "print(a_team)",
+      "method": "exec"
+    },
+    {
+      "question": "print the b_team",
+      "answer": "print(b_team)",
+      "method": "exec"
+    }
+  ],
+  "dict methods": [
+    {
+      "question": "declare dict 'countries' with key 'United States' and 'Washington DC' as value",
+      "answer": "countries = {'United States': 'Washington DC'}",
+      "method": "exec"
+    },
+    {
+      "question": "declare dict 'countries2' with key 'Germany' and 'Berlin' as value",
+      "answer": "countries2 = {'Germany': 'Berlin'}",
+      "method": "exec"
+    },
+    {
+      "question": "update 'countries' with 'countries2'",
+      "answer": "countries.update(countries2)",
+      "method": "exec"
+    },
+    {
+      "question": "update 'countries' using the key 'Russia' and the value 'Moscow'",
+      "answer": "countries.update(Russia='Moscow')",
+      "method": "exec"
+    },
+    {
+      "question": "print the values of 'countries'",
+      "answer": "print(countries.values())",
+      "method": "exec"
+    },
+    {
+      "question": "print the capitol of Germany by using the get method",
+      "answer": "print(countries.get('Germany'))",
+      "method": "exec"
+    },
+    {
+      "question": "print the capitol of France by using the get method with default 'unknown'",
+      "answer": "print(countries.get('France', 'unknown'))",
+      "method": "exec"
+    },
+    {
+      "question": "print the keys and values in countries",
+      "answer": "print(countries.items())",
+      "method": "exec"
+    }
+  ],
+  "membership": [
+    {
+      "question": "I'VE DECLARED THE VARIABLE 'wallet' FOR YOU",
+      "answer": "wallet = [100, 20, 20, 5, 1]",
+      "method": "declare"
+    },
+    {
+      "question": "check if you have a 100 bill in 'wallet' and print",
+      "answer": "print(100 in wallet)",
+      "method": "exec"
+    },
+    {
+      "question": "check if you have a 50 bill and print",
+      "answer": "print(50 in wallet)",
+      "method": "exec"
+    },
+    {
+      "question": "print 'wallet'",
+      "answer": "print(wallet)",
+      "method": "exec"
+    },
+    {
+      "question": "I'VE DECLARED THE VARIABLE 'marbles' FOR YOU",
+      "answer": "marbles = {'red': 25, 'yellow': 45, 'orange': 10, 'green': 20}",
+      "method": "declare"
+    },
+    {
+      "question": "check if you have yellow marbles and print",
+      "answer": "print('yellow' in marbles)",
+      "method": "exec"
+    },
+    {
+      "question": "check if you have blue marbles and print",
+      "answer": "print('blue' in marbles)",
+      "method": "exec"
+    },
+    {
+      "question": "print 'marbles'",
+      "answer": "print(marbles)",
+      "method": "exec"
+    },
+    {
+      "question": "I'VE DECLARED THE VARIABLE 'zen' FOR YOU",
+      "answer": "zen = 'The Zen of Python'",
+      "method": "declare"
+    },
+    {
+      "question": "check if 'zen' is in 'zen' and print",
+      "answer": "print('zen' in zen)",
+      "method": "exec"
+    },
+    {
+      "question": "lowercase 'zen' and try again",
+      "answer": "print('zen' in zen.lower())",
+      "method": "exec"
+    },
+    {
+      "question": "print 'zen'",
+      "answer": "print(zen)",
       "method": "exec"
     }
   ]
