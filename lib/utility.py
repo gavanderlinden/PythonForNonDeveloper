@@ -5,6 +5,11 @@ from functools import wraps
 __dir__ = Path(__file__).absolute().parent
 
 
+class pcolors:
+    RED_BG = "\x1b[41m%s\x1b[0m"
+    GREEN_BG = "\x1b[42m%s\x1b[0m"
+
+
 def check_output(expected=None):
     def decorator(f):
         @wraps(f)
@@ -67,7 +72,8 @@ class QA(object):
 
             # just execute some code
             if method == "declare":
-                print(question)
+                if question:
+                    print(question)
                 return answer
 
             code = self.standardize_code(input(question + ": "))
@@ -81,8 +87,24 @@ class QA(object):
                 print("CORRECT")
                 return code
             else:
-                print("WRONG")
+                if method == "exec" and code == "":
+                    pass
+                else:
+                    match_index = self.partial_match(code, answer)
+                    if match_index:
+                        print(
+                            pcolors.GREEN_BG % code[:match_index],
+                            pcolors.RED_BG % code[match_index:]
+                        )
 
     @staticmethod
     def standardize_code(code):
-        return code.replace('"', "'")
+        return code.replace('"', "'").strip(" \n\t")
+
+    @staticmethod
+    def partial_match(string1, string2):
+        for i, (char1, char2) in enumerate(zip(string1, string2)):
+            if char1 != char2:
+                return i
+
+        return len(string1) + 1
